@@ -1,3 +1,7 @@
+# 3 Repos MErge Orca Whirlpools, Phantom/Docs and Phantom/sol-wallet-adapter
+### For use with AI Documentation services such as www.deepwiki.com
+
+
 [![npm (scoped)](https://img.shields.io/npm/v/@project-serum/sol-wallet-adapter)](https://www.npmjs.com/package/@project-serum/sol-wallet-adapter)
 [![Build Status](https://travis-ci.com/project-serum/sol-wallet-adapter.svg?branch=master)](https://travis-ci.com/project-serum/sol-wallet-adapter)
 

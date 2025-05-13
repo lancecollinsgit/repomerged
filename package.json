@@ -1,0 +1,649 @@
+{
+<<<<<<< HEAD
+  "name": "@project-serum/sol-wallet-adapter",
+  "version": "0.1.4",
+  "description": "Library to allow Solana dApps to use third-party wallets to sign transactions",
+  "license": "Apache-2.0",
+  "repository": "project-serum/sol-wallet-adapter",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "microbundle --no-compress --format modern,cjs",
+    "start": "microbundle watch --no-compress --format modern,cjs",
+    "clean": "rm -rf dist",
+    "prepare": "run-s clean build",
+    "test": "run-s test:unit test:lint test:build",
+    "test:build": "run-s build",
+    "test:lint": "eslint .",
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^0.70.3"
+  },
+  "devDependencies": {
+    "@solana/web3.js": "^0.70.3",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
+    "microbundle": "^0.12.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "transformIgnorePatterns": [
+      "^.+\\.cjs$"
+    ]
+  },
+  "dependencies": {
+    "bs58": "^4.0.1",
+    "eventemitter3": "^4.0.4"
+  }
+=======
+  "name": "@orca-so/whirlpools-monorepo",
+  "private": true,
+  "packageManager": "yarn@4.6.0",
+  "type": "module",
+  "scripts": {
+    "build": "nx run-many --target build --projects",
+    "start": "nx run-many --target start --projects",
+    "test": "nx run-many --target test --projects",
+    "deploy": "nx run-many --target deploy --projects",
+    "format": "nx run-many --target format --projects",
+    "lint": "nx run-many --target lint --projects",
+    "clean": "nx reset && nx run-many --target clean --projects"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.28.1",
+    "@types/node": "^22.14.0",
+    "nx": "^20.7.2",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.4.0",
+    "vitest": "^3.0.9"
+  },
+  "workspaces": [
+    "programs/*",
+    "rust-sdk/*",
+    "ts-sdk/*",
+    "legacy-sdk/*",
+    "examples/ts-sdk/*",
+    "examples/rust-sdk/*",
+    "docs/*"
+  ]
+>>>>>>> ec5a82fe0cd41df4f948eae9fc7c48cf6fc6304e
+}
+======= Conflict in package.json ======= 
+{ 
+  "name": "@project-serum/sol-wallet-adapter", 
+  "version": "0.1.4", 
+  "description": "Library to allow Solana dApps to use third-party wallets to sign transactions", 
+  "license": "Apache-2.0", 
+  "repository": "project-serum/sol-wallet-adapter", 
+  "main": "dist/index.js", 
+  "module": "dist/index.modern.js", 
+  "source": "src/index.js", 
+  "engines": { 
+    "node": ">=10" 
+  }, 
+  "scripts": { 
+    "build": "microbundle --no-compress --format modern,cjs", 
+    "start": "microbundle watch --no-compress --format modern,cjs", 
+    "clean": "rm -rf dist", 
+    "prepare": "run-s clean build", 
+    "test": "run-s test:unit test:lint test:build", 
+    "test:build": "run-s build", 
+    "test:lint": "eslint .", 
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom", 
+    "test:watch": "react-scripts test --env=jsdom", 
+    "predeploy": "cd example && yarn install && yarn run build", 
+    "deploy": "gh-pages -d example/build" 
+  }, 
+  "peerDependencies": { 
+    "@solana/web3.js": "^0.70.3" 
+  }, 
+  "devDependencies": { 
+    "@solana/web3.js": "^0.70.3", 
+    "babel-eslint": "^10.0.3", 
+    "cross-env": "^7.0.2", 
+    "eslint": "^6.8.0", 
+    "eslint-config-prettier": "^6.7.0", 
+    "eslint-config-standard": "^14.1.0", 
+    "eslint-config-standard-react": "^9.2.0", 
+    "eslint-plugin-import": "^2.18.2", 
+    "eslint-plugin-node": "^11.0.0", 
+    "eslint-plugin-prettier": "^3.1.1", 
+    "eslint-plugin-promise": "^4.2.1", 
+    "eslint-plugin-react": "^7.17.0", 
+    "eslint-plugin-standard": "^4.0.1", 
+    "gh-pages": "^2.2.0", 
+    "microbundle": "^0.12.3", 
+    "npm-run-all": "^4.1.5", 
+    "prettier": "^2.0.4", 
+    "react": "^16.13.1", 
+    "react-dom": "^16.13.1", 
+    "react-scripts": "^3.4.1" 
+  }, 
+  "files": [ 
+    "dist" 
+  ], 
+  "jest": { 
+    "transformIgnorePatterns": [ 
+      "^.+\\.cjs$" 
+    ] 
+  }, 
+  "dependencies": { 
+    "bs58": "^4.0.1", 
+    "eventemitter3": "^4.0.4" 
+  } 
+} 
+{ 
+  "name": "@orca-so/whirlpools-monorepo", 
+  "private": true, 
+  "packageManager": "yarn@4.6.0", 
+  "type": "module", 
+  "scripts": { 
+    "build": "nx run-many --target build --projects", 
+    "start": "nx run-many --target start --projects", 
+    "test": "nx run-many --target test --projects", 
+    "deploy": "nx run-many --target deploy --projects", 
+    "format": "nx run-many --target format --projects", 
+    "lint": "nx run-many --target lint --projects", 
+    "clean": "nx reset && nx run-many --target clean --projects" 
+  }, 
+  "devDependencies": { 
+    "@changesets/changelog-github": "^0.5.1", 
+    "@changesets/cli": "^2.28.1", 
+    "@types/node": "^22.14.0", 
+    "nx": "^20.7.2", 
+    "rimraf": "^6.0.1", 
+    "tsup": "^8.4.0", 
+    "vitest": "^3.0.9" 
+  }, 
+  "workspaces": [ 
+    "programs/*", 
+    "rust-sdk/*", 
+    "ts-sdk/*", 
+    "legacy-sdk/*", 
+    "examples/ts-sdk/*", 
+    "examples/rust-sdk/*", 
+    "docs/*" 
+  ] 
+} 
+======= Conflict in package.json ======= 
+{
+  "name": "@project-serum/sol-wallet-adapter",
+  "version": "0.1.4",
+  "description": "Library to allow Solana dApps to use third-party wallets to sign transactions",
+  "license": "Apache-2.0",
+  "repository": "project-serum/sol-wallet-adapter",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "microbundle --no-compress --format modern,cjs",
+    "start": "microbundle watch --no-compress --format modern,cjs",
+    "clean": "rm -rf dist",
+    "prepare": "run-s clean build",
+    "test": "run-s test:unit test:lint test:build",
+    "test:build": "run-s build",
+    "test:lint": "eslint .",
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^0.70.3"
+  },
+  "devDependencies": {
+    "@solana/web3.js": "^0.70.3",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
+    "microbundle": "^0.12.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "transformIgnorePatterns": [
+      "^.+\\.cjs$"
+    ]
+  },
+  "dependencies": {
+    "bs58": "^4.0.1",
+    "eventemitter3": "^4.0.4"
+  }
+}
+{
+  "name": "@orca-so/whirlpools-monorepo",
+  "private": true,
+  "packageManager": "yarn@4.6.0",
+  "type": "module",
+  "scripts": {
+    "build": "nx run-many --target build --projects",
+    "start": "nx run-many --target start --projects",
+    "test": "nx run-many --target test --projects",
+    "deploy": "nx run-many --target deploy --projects",
+    "format": "nx run-many --target format --projects",
+    "lint": "nx run-many --target lint --projects",
+    "clean": "nx reset && nx run-many --target clean --projects"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.28.1",
+    "@types/node": "^22.14.0",
+    "nx": "^20.7.2",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.4.0",
+    "vitest": "^3.0.9"
+  },
+  "workspaces": [
+    "programs/*",
+    "rust-sdk/*",
+    "ts-sdk/*",
+    "legacy-sdk/*",
+    "examples/ts-sdk/*",
+    "examples/rust-sdk/*",
+    "docs/*"
+  ]
+}
+======= Conflict in package.json ======= 
+======= Conflict in package.json ======= 
+{
+  "name": "@project-serum/sol-wallet-adapter",
+  "version": "0.1.4",
+  "description": "Library to allow Solana dApps to use third-party wallets to sign transactions",
+  "license": "Apache-2.0",
+  "repository": "project-serum/sol-wallet-adapter",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "microbundle --no-compress --format modern,cjs",
+    "start": "microbundle watch --no-compress --format modern,cjs",
+    "clean": "rm -rf dist",
+    "prepare": "run-s clean build",
+    "test": "run-s test:unit test:lint test:build",
+    "test:build": "run-s build",
+    "test:lint": "eslint .",
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^0.70.3"
+  },
+  "devDependencies": {
+    "@solana/web3.js": "^0.70.3",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
+    "microbundle": "^0.12.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "transformIgnorePatterns": [
+      "^.+\\.cjs$"
+    ]
+  },
+  "dependencies": {
+    "bs58": "^4.0.1",
+    "eventemitter3": "^4.0.4"
+  }
+}
+{
+<<<<<<< HEAD
+  "name": "@project-serum/sol-wallet-adapter",
+  "version": "0.1.4",
+  "description": "Library to allow Solana dApps to use third-party wallets to sign transactions",
+  "license": "Apache-2.0",
+  "repository": "project-serum/sol-wallet-adapter",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "microbundle --no-compress --format modern,cjs",
+    "start": "microbundle watch --no-compress --format modern,cjs",
+    "clean": "rm -rf dist",
+    "prepare": "run-s clean build",
+    "test": "run-s test:unit test:lint test:build",
+    "test:build": "run-s build",
+    "test:lint": "eslint .",
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^0.70.3"
+  },
+  "devDependencies": {
+    "@solana/web3.js": "^0.70.3",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
+    "microbundle": "^0.12.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "transformIgnorePatterns": [
+      "^.+\\.cjs$"
+    ]
+  },
+  "dependencies": {
+    "bs58": "^4.0.1",
+    "eventemitter3": "^4.0.4"
+  }
+=======
+  "name": "@orca-so/whirlpools-monorepo",
+  "private": true,
+  "packageManager": "yarn@4.6.0",
+  "type": "module",
+  "scripts": {
+    "build": "nx run-many --target build --projects",
+    "start": "nx run-many --target start --projects",
+    "test": "nx run-many --target test --projects",
+    "deploy": "nx run-many --target deploy --projects",
+    "format": "nx run-many --target format --projects",
+    "lint": "nx run-many --target lint --projects",
+    "clean": "nx reset && nx run-many --target clean --projects"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.28.1",
+    "@types/node": "^22.14.0",
+    "nx": "^20.7.2",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.4.0",
+    "vitest": "^3.0.9"
+  },
+  "workspaces": [
+    "programs/*",
+    "rust-sdk/*",
+    "ts-sdk/*",
+    "legacy-sdk/*",
+    "examples/ts-sdk/*",
+    "examples/rust-sdk/*",
+    "docs/*"
+  ]
+>>>>>>> ec5a82fe0cd41df4f948eae9fc7c48cf6fc6304e
+}
+======= Conflict in package.json ======= 
+{ 
+  "name": "@project-serum/sol-wallet-adapter", 
+  "version": "0.1.4", 
+  "description": "Library to allow Solana dApps to use third-party wallets to sign transactions", 
+  "license": "Apache-2.0", 
+  "repository": "project-serum/sol-wallet-adapter", 
+  "main": "dist/index.js", 
+  "module": "dist/index.modern.js", 
+  "source": "src/index.js", 
+  "engines": { 
+    "node": ">=10" 
+  }, 
+  "scripts": { 
+    "build": "microbundle --no-compress --format modern,cjs", 
+    "start": "microbundle watch --no-compress --format modern,cjs", 
+    "clean": "rm -rf dist", 
+    "prepare": "run-s clean build", 
+    "test": "run-s test:unit test:lint test:build", 
+    "test:build": "run-s build", 
+    "test:lint": "eslint .", 
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom", 
+    "test:watch": "react-scripts test --env=jsdom", 
+    "predeploy": "cd example && yarn install && yarn run build", 
+    "deploy": "gh-pages -d example/build" 
+  }, 
+  "peerDependencies": { 
+    "@solana/web3.js": "^0.70.3" 
+  }, 
+  "devDependencies": { 
+    "@solana/web3.js": "^0.70.3", 
+    "babel-eslint": "^10.0.3", 
+    "cross-env": "^7.0.2", 
+    "eslint": "^6.8.0", 
+    "eslint-config-prettier": "^6.7.0", 
+    "eslint-config-standard": "^14.1.0", 
+    "eslint-config-standard-react": "^9.2.0", 
+    "eslint-plugin-import": "^2.18.2", 
+    "eslint-plugin-node": "^11.0.0", 
+    "eslint-plugin-prettier": "^3.1.1", 
+    "eslint-plugin-promise": "^4.2.1", 
+    "eslint-plugin-react": "^7.17.0", 
+    "eslint-plugin-standard": "^4.0.1", 
+    "gh-pages": "^2.2.0", 
+    "microbundle": "^0.12.3", 
+    "npm-run-all": "^4.1.5", 
+    "prettier": "^2.0.4", 
+    "react": "^16.13.1", 
+    "react-dom": "^16.13.1", 
+    "react-scripts": "^3.4.1" 
+  }, 
+  "files": [ 
+    "dist" 
+  ], 
+  "jest": { 
+    "transformIgnorePatterns": [ 
+      "^.+\\.cjs$" 
+    ] 
+  }, 
+  "dependencies": { 
+    "bs58": "^4.0.1", 
+    "eventemitter3": "^4.0.4" 
+  } 
+} 
+{ 
+  "name": "@orca-so/whirlpools-monorepo", 
+  "private": true, 
+  "packageManager": "yarn@4.6.0", 
+  "type": "module", 
+  "scripts": { 
+    "build": "nx run-many --target build --projects", 
+    "start": "nx run-many --target start --projects", 
+    "test": "nx run-many --target test --projects", 
+    "deploy": "nx run-many --target deploy --projects", 
+    "format": "nx run-many --target format --projects", 
+    "lint": "nx run-many --target lint --projects", 
+    "clean": "nx reset && nx run-many --target clean --projects" 
+  }, 
+  "devDependencies": { 
+    "@changesets/changelog-github": "^0.5.1", 
+    "@changesets/cli": "^2.28.1", 
+    "@types/node": "^22.14.0", 
+    "nx": "^20.7.2", 
+    "rimraf": "^6.0.1", 
+    "tsup": "^8.4.0", 
+    "vitest": "^3.0.9" 
+  }, 
+  "workspaces": [ 
+    "programs/*", 
+    "rust-sdk/*", 
+    "ts-sdk/*", 
+    "legacy-sdk/*", 
+    "examples/ts-sdk/*", 
+    "examples/rust-sdk/*", 
+    "docs/*" 
+  ] 
+} 
+======= Conflict in package.json ======= 
+{
+  "name": "@project-serum/sol-wallet-adapter",
+  "version": "0.1.4",
+  "description": "Library to allow Solana dApps to use third-party wallets to sign transactions",
+  "license": "Apache-2.0",
+  "repository": "project-serum/sol-wallet-adapter",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "microbundle --no-compress --format modern,cjs",
+    "start": "microbundle watch --no-compress --format modern,cjs",
+    "clean": "rm -rf dist",
+    "prepare": "run-s clean build",
+    "test": "run-s test:unit test:lint test:build",
+    "test:build": "run-s build",
+    "test:lint": "eslint .",
+    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^0.70.3"
+  },
+  "devDependencies": {
+    "@solana/web3.js": "^0.70.3",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
+    "microbundle": "^0.12.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "jest": {
+    "transformIgnorePatterns": [
+      "^.+\\.cjs$"
+    ]
+  },
+  "dependencies": {
+    "bs58": "^4.0.1",
+    "eventemitter3": "^4.0.4"
+  }
+}
+{
+  "name": "@orca-so/whirlpools-monorepo",
+  "private": true,
+  "packageManager": "yarn@4.6.0",
+  "type": "module",
+  "scripts": {
+    "build": "nx run-many --target build --projects",
+    "start": "nx run-many --target start --projects",
+    "test": "nx run-many --target test --projects",
+    "deploy": "nx run-many --target deploy --projects",
+    "format": "nx run-many --target format --projects",
+    "lint": "nx run-many --target lint --projects",
+    "clean": "nx reset && nx run-many --target clean --projects"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.28.1",
+    "@types/node": "^22.14.0",
+    "nx": "^20.7.2",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.4.0",
+    "vitest": "^3.0.9"
+  },
+  "workspaces": [
+    "programs/*",
+    "rust-sdk/*",
+    "ts-sdk/*",
+    "legacy-sdk/*",
+    "examples/ts-sdk/*",
+    "examples/rust-sdk/*",
+    "docs/*"
+  ]
+}
+======= Conflict in package.json ======= 
+======= Conflict in package.json ======= 

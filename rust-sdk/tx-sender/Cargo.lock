@@ -486,11 +486,11 @@ dependencies = [
 
 [[package]]
 name = "borsh"
-version = "1.8.0"
+version = "1.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a88b7ea17d208c4193f2c1e6de3c35fe71f98c96982d5ced308bdcc749ff6e1f"
+checksum = "553c5d846a6ba5150c65e3b1b8ec073bcf1abc20f9b7220de384a4443ea4e20a"
 dependencies = [
- "borsh-derive 1.8.0",
+ "borsh-derive 1.8.1",
  "bytes",
  "cfg_aliases 0.2.1",
 ]
@@ -510,15 +510,15 @@ dependencies = [
 
 [[package]]
 name = "borsh-derive"
-version = "1.8.0"
+version = "1.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d8f347189c62a579b8cd5f80714efa178f52e461dc2e6d701d264f5ff22e566c"
+checksum = "12cdfe656708a01f89b451a7d36466e6fe6c414de0aa18fc54f864f6f9ca9f56"
 dependencies = [
  "once_cell",
  "proc-macro-crate 3.2.0",
  "proc-macro2",
  "quote",
- "syn 2.0.119",
+ "syn 3.0.4",
 ]
 
 [[package]]
@@ -3483,7 +3483,7 @@ dependencies = [
  "bitflags 2.9.0",
  "blake3",
  "borsh 0.10.4",
- "borsh 1.8.0",
+ "borsh 1.8.1",
  "bs58",
  "bv",
  "bytemuck",
@@ -3695,7 +3695,7 @@ checksum = "0317d412207639326f2393c935769d2d7429d0882d509d0dca8dc0bb55aca6a1"
 dependencies = [
  "bincode",
  "bitflags 2.9.0",
- "borsh 1.8.0",
+ "borsh 1.8.1",
  "bs58",
  "bytemuck",
  "bytemuck_derive",
@@ -3853,7 +3853,7 @@ dependencies = [
  "Inflector",
  "base64 0.22.1",
  "bincode",
- "borsh 1.8.0",
+ "borsh 1.8.1",
  "bs58",
  "lazy_static",
  "log",
@@ -4008,7 +4008,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "68034596cf4804880d265f834af1ff2f821ad5293e41fa0f8f59086c181fc38e"
 dependencies = [
  "assert_matches",
- "borsh 1.8.0",
+ "borsh 1.8.1",
  "num-derive",
  "num-traits",
  "solana-program",
@@ -4067,7 +4067,7 @@ version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c704c88fc457fa649ba3aabe195c79d885c3f26709efaddc453c8de352c90b87"
 dependencies = [
- "borsh 1.8.0",
+ "borsh 1.8.1",
  "bytemuck",
  "bytemuck_derive",
  "solana-program",
@@ -4172,7 +4172,7 @@ version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c6c2318ddff97e006ed9b1291ebec0750a78547f870f62a69c56fe3b46a5d8fc"
 dependencies = [
- "borsh 1.8.0",
+ "borsh 1.8.1",
  "solana-program",
  "spl-discriminator",
  "spl-pod",
